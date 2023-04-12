@@ -1,3 +1,11 @@
+/* .form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+} */
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -26,16 +34,20 @@
     -webkit-text-fill-color: transparent; */
 }
 
-.footer-Email {
+/* .footer-Email { */
+.form {
     margin-top: 1rem;
 }
 
-.footer-Email input {
+/* .footer-Email input { */
+.form input {
     flex: 1;
     width: 100%;
     min-height: 50px;
     font-family: var(--font-fam);
+    font-weight: bold;
     font-size: 18px;
+    line-height: 25px;
     line-height: 25px;
     background: black;
     border: 2px solid gold;
@@ -46,9 +58,10 @@
     border-bottom-right-radius: 5px;
 }
 
-.footer-Email button {
+/* .footer-Email button { */
+.form button {
     flex: 0.5;
-    width: 100%;
+    width: 40%;
     min-height: 50px;
     font-family: var(--font-fam);
     font-weight: bold;
@@ -62,6 +75,31 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border: 2px solid white;
+}
+
+.form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+    background: black;
+    border: 2px solid gold;
+    color: white;
+    font-family: var(--font-fam);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+.form label {
+    color: white;
+    font-family: var(--font-fam);
 }
 
 .footer-Content div {
@@ -97,13 +135,13 @@
     line-height: 15px;
 }
 
-.footer-links-div{
+.footer-links-div {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
 
-.footer-links-div h4{
+.footer-links-div h4 {
     font-family: var(--font-fam);
     font-size: 15px;
     line-height: 16px;
@@ -111,7 +149,7 @@
     margin-bottom: 1rem;
 }
 
-.footer-links-div p{
+.footer-links-div p {
     font-family: var(--font-fam);
     font-size: 12px;
     line-height: 14px;
@@ -120,7 +158,7 @@
     cursor: pointer;
 }
 
-.footer-copyright{
+.footer-copyright {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,14 +167,14 @@
     width: 100%;
 }
 
-.footer-copyright p{
+.footer-copyright p {
     font-family: var(--font-fam);
     font-size: 12px;
     line-height: 15px;
     color: #fff;
 }
 
-.footer-links-icons{
+.footer-links-icons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,21 +185,21 @@
     font-size: 2.5rem;
 }
 
-.footer-links-icons svg:hover{
+.footer-links-icons svg:hover {
     transform: scale(1.1);
     color: #95ec5b;
     cursor: pointer;
 }
 
 @media screen and (max-width:900px) {
-    .footer-Heading h3{
-     font-size: 40px;
-     line-height: 50px;
-    }      
- 
- }
+    .footer-Heading h3 {
+        font-size: 40px;
+        line-height: 50px;
+    }
 
- @media screen and (max-width: 692px) {
+}
+
+@media screen and (max-width: 692px) {
     .footer-Heading h3 {
         font-size: 34px;
         line-height: 42px;
@@ -174,8 +212,32 @@
 }
 
 @media screen and (max-width:432px) {
-    .footer-Heading{
+    .footer-Heading {
         font-size: 28px;
         line-height: 35px;
-    }  
+    }
+}
+
+@media screen and (max-width:355px) {
+    .form input {
+        width: 80%;
+        line-height: 20px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:355px) {
+    .form textarea {
+        width: 80%;
+        line-height: 20px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:355px) {
+    .form button {
+        width: 45%;
+        line-height: 12px;
+        font-size: 12px;
+        font-weight: bold;
+        min-height: 40px;
+    }
 }
